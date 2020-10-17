@@ -2,7 +2,7 @@ language: python
 
 
 install:
-  - pip install ".[test]"
+  - pip install ".test"
 
 script: pytest
 services:
