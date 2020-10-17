@@ -1,5 +1,12 @@
 language: python
 
+before_install:
+  - python install -U pip
+  - python install -U pytest
+
+install:
+  - pip install ".[test]"
+
 script: pytest
 services:
   - xvfb
