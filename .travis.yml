@@ -1,9 +1,5 @@
 language: python
 
-
-install:
-  - python -m unittest test/test_operations.py
-
-script: pytest
+script: python test/test_operations.py
 services:
   - xvfb
