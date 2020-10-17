@@ -2,7 +2,7 @@ language: python
 
 
 install:
-  - pip install ".test"
+  - python -m unittest test/test_operations.py
 
 script: pytest
 services:
