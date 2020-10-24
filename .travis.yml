@@ -2,12 +2,12 @@ language: python
 
 
 install:
-    - pip install tox-travis coveralls
+  - pip install tox-travis coveralls
 
 script: python test/test_operations.py
 
 services:
-    - xvfb
+  - xvfb
   
- after_success:
-     - coveralls
+after_success:
+  - coveralls
