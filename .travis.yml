@@ -4,7 +4,8 @@ language: python
 install:
   - pip install tox-travis coveralls
 
-script: python test/test_operations.py
+script: 
+  - python test/test_operations.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 
 services:
   - xvfb
