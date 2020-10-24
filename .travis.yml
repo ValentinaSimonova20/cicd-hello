@@ -2,10 +2,12 @@ language: python
 
 
 install:
-  - pip install tox-travis coveralls
+  - pip install coveralls
+  - pip install pytest
+  - pip install pytest-cov
 
 script: 
-  - python test/test_operations.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - pytest --cov=test/
 
 services:
   - xvfb
